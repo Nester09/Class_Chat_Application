@@ -1,0 +1,13 @@
+# Uploaded files
+uploads/*
+
+# Local XAMPP/database files
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

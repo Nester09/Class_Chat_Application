@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(135deg, #f0f4f8, #d6e8f5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+h2{
+    color: #333;
+}
+.form-group {
+    position: relative;
+}
+.form-group i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-right: 10px; 
+}
+.form-control {
+    border: none;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    background: transparent;
+    padding-left: 40px; 
+}
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #007bff;
+    border-right: 2px solid #007bff;
+}
+.modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.modal-body h6 {
+    color: #007bff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.modal-body ul {
+    padding-left: 20px;
+}
+.modal-body li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.btn-primary {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1px #007bff, 0 0 2px #007bff; 
+}
+.btn-primary:hover {
+    box-shadow: 0 0 2px #007bff;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+        max-width: 350px;
+    }
+    .btn-primary {
+        padding: 8px;
+    }
+}
